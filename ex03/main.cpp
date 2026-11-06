@@ -10,11 +10,11 @@ static void	test(Point const p) {
 
 int	main(void) {
 	std::cout << "=== BSP, triangle (0,0) (10,0) (0,10) ===" << std::endl;
-	test(Point(1, 1));      // внутри
-	test(Point(10, 10));    // снаружи
-	test(Point(5, 0));      // на ребре
-	test(Point(0, 0));      // вершина
-	test(Point(5, 5));      // на гипотенузе
+	test(Point(1, 1));
+	test(Point(10, 10));
+	test(Point(5, 0));
+	test(Point(0, 0));
+	test(Point(5, 5));
 
 	std::cout << std::endl << "=== Color & operator= ===" << std::endl;
 	Point	p1(1, 2);

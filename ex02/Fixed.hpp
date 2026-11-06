@@ -47,4 +47,3 @@ public:
 std::ostream& operator<<(std::ostream& out, Fixed const& f);
 
 #endif
-

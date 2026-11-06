@@ -22,8 +22,6 @@ Fixed::~Fixed() {
 	std::cout << "Destructor called" << std::endl;
 }
 
-
-
 Fixed::Fixed(int const n) : _value(n << _fractionalBits) {
 	std::cout << "Int constructor called" << std::endl;
 }
@@ -31,8 +29,6 @@ Fixed::Fixed(int const n) : _value(n << _fractionalBits) {
 Fixed::Fixed(float const f) : _value(roundf(f * (1 << _fractionalBits))) {
 	std::cout << "Float constructor called" << std::endl;
 }
-
-
 
 int	Fixed::getRawBits( void ) const {
 	std::cout << "getRawBits member function called" << std::endl;
@@ -51,7 +47,7 @@ int		Fixed::toInt( void ) const {
 	return _value >> _fractionalBits;
 }
 
-std::ostream& operator<<(std::ostream& out, Fixed const& f) {
+std::ostream&	operator<<(std::ostream& out, Fixed const& f) {
 	out << f.toFloat();
 	return out;
 }
